@@ -93,8 +93,16 @@ namespace ControleClientes
                     Console.WriteLine("Total a Pagar : " +  pessoaJuridica.valorTotal.ToString("C"));
                 }
                 
-
-                programaEncerrado = true;
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("Deseja continuar? S/N");
+                string continuar = Console.ReadLine();
+                
+                if (continuar.ToLower().Equals("s"))
+                {
+                    programaEncerrado = false;
+                } else {
+                    programaEncerrado = true;
+                }
 
                 
             }
